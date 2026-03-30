@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_(rd!$cw#sw)$%d)4=+7k5r%evyy!$wnzmk2*3y_q&^_9rappp'
+SECRET_KEY = 'django-insecure-zwlganmhdp72_p-nyi9!f!hlh10j)uc$jiti=j)1009afya@f#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app'
+
+    'app',  
 ]
+    
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'app/templates'),
+            os.path.join(BASE_DIR, 'app/template'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -82,8 +84,9 @@ DATABASES = {
         'NAME': 'bibliotecainfoh2026',
         'USER': 'postgres',
         'PASSWORD': '123456',
-        'HOST': 'localhost',
+        'HOST':'localhost',
         'POST': '5432',
+
     }
 }
 
